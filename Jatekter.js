@@ -39,13 +39,11 @@ export default class Jatekter {
     }
   }
   ellenorzes() {
-    // Ellenőrizzük, hogy minden kártya felfordult-e
-
     if (this.#vegleges.length === 40) {
       setTimeout(() => {
         alert("Gratulálok, kész vagy! Újrakezdés!");
-        this.kever(); // új keverés
-        this.init(); // új játékot indítunk
+        this.kever();
+        this.init();
       }, 500);
     }
   }
