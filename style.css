@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 10px;
+}
+article {
+  width: 90%;
+  max-width: 1000px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+main {
+  width: 90%;
+  max-width: 1000px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+}
+img {
+  border: 1px solid aquamarine;
+  border-radius: 30px;
+  margin: 5px;
+  margin-left: 5px;
+  max-width: 200px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  article.jatekter {
+    grid-template-columns: repeat(2, 1fr); /* Mobilon csak 2 oszlop */
+    gap: 8px;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+/* Táblagépek (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  article.jatekter {
+    grid-template-columns: repeat(3, 1fr); /* Tableten 3 oszlop */
+    gap: 10px;
+  }
+}
